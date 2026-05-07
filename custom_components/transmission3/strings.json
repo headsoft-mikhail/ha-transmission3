@@ -14,7 +14,7 @@
           "password": "[%key:common::config_flow::data::password%]"
         },
         "data_description": {
-          "password": "[%key:component::transmission3::config::step::user::data_description::password%]"
+          "password": "[%key:component::transmission::config::step::user::data_description::password%]"
         },
         "description": "The password for {username} is invalid.",
         "title": "[%key:common::config_flow::title::reauth%]"
@@ -62,14 +62,14 @@
       },
       "completed_torrents": {
         "name": "Completed torrents",
-        "unit_of_measurement": "[%key:component::transmission3::entity::sensor::active_torrents::unit_of_measurement%]"
+        "unit_of_measurement": "[%key:component::transmission::entity::sensor::active_torrents::unit_of_measurement%]"
       },
       "download_speed": {
         "name": "Download speed"
       },
       "paused_torrents": {
         "name": "Paused torrents",
-        "unit_of_measurement": "[%key:component::transmission3::entity::sensor::active_torrents::unit_of_measurement%]"
+        "unit_of_measurement": "[%key:component::transmission::entity::sensor::active_torrents::unit_of_measurement%]"
       },
       "session_download": {
         "name": "Session download"
@@ -82,7 +82,7 @@
       },
       "started_torrents": {
         "name": "Started torrents",
-        "unit_of_measurement": "[%key:component::transmission3::entity::sensor::active_torrents::unit_of_measurement%]"
+        "unit_of_measurement": "[%key:component::transmission::entity::sensor::active_torrents::unit_of_measurement%]"
       },
       "total_download": {
         "name": "Total download"
@@ -92,7 +92,7 @@
       },
       "total_torrents": {
         "name": "Total torrents",
-        "unit_of_measurement": "[%key:component::transmission3::entity::sensor::active_torrents::unit_of_measurement%]"
+        "unit_of_measurement": "[%key:component::transmission::entity::sensor::active_torrents::unit_of_measurement%]"
       },
       "total_upload": {
         "name": "Total upload"
@@ -184,19 +184,12 @@
       "description": "Get a list of current torrents",
       "fields": {
         "entry_id": {
-          "description": "[%key:component::transmission3::services::add_torrent::fields::entry_id::description%]",
-          "name": "[%key:component::transmission3::services::add_torrent::fields::entry_id::name%]"
+          "description": "[%key:component::transmission::services::add_torrent::fields::entry_id::description%]",
+          "name": "[%key:component::transmission::services::add_torrent::fields::entry_id::name%]"
         },
         "torrent_filter": {
           "description": "What kind of torrents you want to return, such as All or Active.",
-          "name": "Torrent filter",
-          "options": {
-            "active": "Active",
-            "all": "All",
-            "completed": "Completed",
-            "paused": "Paused",
-            "started": "Started"
-          }
+          "name": "Torrent filter"
         }
       },
       "name": "Get torrents"
@@ -209,8 +202,8 @@
           "name": "Delete data"
         },
         "entry_id": {
-          "description": "[%key:component::transmission3::services::add_torrent::fields::entry_id::description%]",
-          "name": "[%key:component::transmission3::services::add_torrent::fields::entry_id::name%]"
+          "description": "[%key:component::transmission::services::add_torrent::fields::entry_id::description%]",
+          "name": "[%key:component::transmission::services::add_torrent::fields::entry_id::name%]"
         },
         "id": {
           "description": "ID of a torrent.",
@@ -223,11 +216,11 @@
       "description": "Starts a torrent.",
       "fields": {
         "entry_id": {
-          "description": "[%key:component::transmission3::services::add_torrent::fields::entry_id::description%]",
-          "name": "[%key:component::transmission3::services::add_torrent::fields::entry_id::name%]"
+          "description": "[%key:component::transmission::services::add_torrent::fields::entry_id::description%]",
+          "name": "[%key:component::transmission::services::add_torrent::fields::entry_id::name%]"
         },
         "id": {
-          "description": "[%key:component::transmission3::services::remove_torrent::fields::id::description%]",
+          "description": "[%key:component::transmission::services::remove_torrent::fields::id::description%]",
           "name": "ID"
         }
       },
@@ -237,11 +230,11 @@
       "description": "Stops a torrent.",
       "fields": {
         "entry_id": {
-          "description": "[%key:component::transmission3::services::add_torrent::fields::entry_id::description%]",
-          "name": "[%key:component::transmission3::services::add_torrent::fields::entry_id::name%]"
+          "description": "[%key:component::transmission::services::add_torrent::fields::entry_id::description%]",
+          "name": "[%key:component::transmission::services::add_torrent::fields::entry_id::name%]"
         },
         "id": {
-          "description": "[%key:component::transmission3::services::remove_torrent::fields::id::description%]",
+          "description": "[%key:component::transmission::services::remove_torrent::fields::id::description%]",
           "name": "ID"
         }
       },

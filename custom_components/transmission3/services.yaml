@@ -4,7 +4,7 @@ add_torrent:
       required: true
       selector:
         config_entry:
-          integration: transmission3
+          integration: transmission
     torrent:
       required: true
       example: http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso.torrent
@@ -27,7 +27,7 @@ get_torrents:
       required: true
       selector:
         config_entry:
-          integration: transmission3
+          integration: transmission
     torrent_filter:
       required: true
       example: "all"
@@ -48,7 +48,7 @@ remove_torrent:
       required: true
       selector:
         config_entry:
-          integration: transmission3
+          integration: transmission
     id:
       required: true
       example: 123
@@ -66,7 +66,7 @@ start_torrent:
       required: true
       selector:
         config_entry:
-          integration: transmission3
+          integration: transmission
     id:
       required: true
       example: 123
@@ -79,7 +79,7 @@ stop_torrent:
       required: true
       selector:
         config_entry:
-          integration: transmission3
+          integration: transmission
     id:
       required: true
       example: 123

@@ -6,7 +6,7 @@ from collections.abc import Callable
 
 from transmission_rpc import Torrent
 
-DOMAIN = "transmission3"
+DOMAIN = "transmission"
 
 ORDER_NEWEST_FIRST = "newest_first"
 ORDER_OLDEST_FIRST = "oldest_first"
@@ -51,9 +51,9 @@ SERVICE_REMOVE_TORRENT = "remove_torrent"
 SERVICE_START_TORRENT = "start_torrent"
 SERVICE_STOP_TORRENT = "stop_torrent"
 
-EVENT_STARTED_TORRENT = "transmission3_started_torrent"
-EVENT_REMOVED_TORRENT = "transmission3_removed_torrent"
-EVENT_DOWNLOADED_TORRENT = "transmission3_downloaded_torrent"
+EVENT_STARTED_TORRENT = "transmission_started_torrent"
+EVENT_REMOVED_TORRENT = "transmission_removed_torrent"
+EVENT_DOWNLOADED_TORRENT = "transmission_downloaded_torrent"
 
 EVENT_TYPE_STARTED = "started"
 EVENT_TYPE_REMOVED = "removed"

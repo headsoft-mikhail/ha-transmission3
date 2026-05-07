@@ -1,5 +1,5 @@
 {
-  "domain": "transmission3",
+  "domain": "transmission",
   "name": "Transmission 3.x",
   "codeowners": [],
   "config_flow": true,
