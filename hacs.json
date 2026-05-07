@@ -1,0 +1,9 @@
+{
+  "name": "Transmission 3.x",
+  "render_readme": true,
+  "country": "ALL",
+  "homeassistant": "2024.1.0",
+  "zip_release": true,
+  "filename": "transmission3.zip",
+  "file_filter": ["__pycache__", "tests", ".github"]
+}

@@ -1,0 +1,14 @@
+{
+  "domain": "transmission3",
+  "name": "Transmission 3.x",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/headsoft-mikhail/transmission3/blob/main/README.md",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/headsoft-mikhail/transmission3/issues",
+  "loggers": ["transmissionrpc"],
+  "quality_scale": "bronze",
+  "requirements": ["transmission-rpc==7.0.3"],
+  "version": "1.0.0"
+}
