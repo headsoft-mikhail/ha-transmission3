@@ -1,7 +1,0 @@
-{
-  "disabledMcpjsonServers": [
-    "jira",
-    "confluence",
-    "gitlab"
-  ]
-}

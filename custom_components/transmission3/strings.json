@@ -189,7 +189,14 @@
         },
         "torrent_filter": {
           "description": "What kind of torrents you want to return, such as All or Active.",
-          "name": "Torrent filter"
+          "name": "Torrent filter",
+          "options": {
+            "active": "Active",
+            "all": "All",
+            "completed": "Completed",
+            "paused": "Paused",
+            "started": "Started"
+          }
         }
       },
       "name": "Get torrents"
