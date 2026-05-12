@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections.abc import Callable
 from contextlib import suppress
 from dataclasses import dataclass
+import logging
 from typing import Any
 
 from homeassistant.components.sensor import (
@@ -29,6 +30,9 @@ from .const import (
 from .coordinator import TransmissionConfigEntry, TransmissionDataUpdateCoordinator
 from .entity import TransmissionEntity
 from .helpers import filter_torrents
+
+
+_LOGGER = logging.getLogger(__name__)
 
 PARALLEL_UPDATES = 0
 
@@ -195,6 +199,9 @@ async def async_setup_entry(
 ) -> None:
     """Set up the Transmission sensors."""
     coordinator = config_entry.runtime_data
+
+    for description in SENSOR_TYPES:
+        _LOGGER.warning(f"{description.translation_key}: {coordinator.config_entry.entry_id}-{description.key}")
 
     async_add_entities(
         TransmissionSensor(coordinator, description) for description in SENSOR_TYPES
