@@ -6,7 +6,7 @@ from collections.abc import Callable
 
 from transmission_rpc import Torrent
 
-DOMAIN = "transmission3"
+DOMAIN = "transmission"
 
 ORDER_NEWEST_FIRST = "newest_first"
 ORDER_OLDEST_FIRST = "oldest_first"
