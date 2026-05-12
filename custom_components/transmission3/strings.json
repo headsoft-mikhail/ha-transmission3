@@ -112,7 +112,7 @@
       }
     },
     "switch": {
-      "on_off": {
+      "switch": {
         "name": "Switch"
       },
       "turtle_mode": {

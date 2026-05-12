@@ -27,8 +27,8 @@ class TransmissionSwitchEntityDescription(SwitchEntityDescription):
 
 SWITCH_TYPES: tuple[TransmissionSwitchEntityDescription, ...] = (
     TransmissionSwitchEntityDescription(
-        key="on_off",
-        translation_key="on_off",
+        key="switch",
+        translation_key="switch",
         is_on_func=lambda coordinator: coordinator.data.active_torrent_count > 0,
         on_func=lambda coordinator: coordinator.start_torrents(),
         off_func=lambda coordinator: coordinator.stop_torrents(),

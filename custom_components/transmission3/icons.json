@@ -50,7 +50,7 @@
       }
     },
     "switch": {
-      "on_off": {
+      "switch": {
         "default": "mdi:cloud",
         "state": {
           "off": "mdi:cloud-off"

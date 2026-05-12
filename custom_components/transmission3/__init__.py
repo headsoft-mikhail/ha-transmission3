@@ -53,7 +53,7 @@ MIGRATION_NAME_TO_KEY = {
     "Completed Torrents": "completed_torrents",
     "Started Torrents": "started_torrents",
     # Switches
-    "Switch": "on_off",
+    "Switch": "switch",
     "Turtle Mode": "turtle_mode",
 }
 
