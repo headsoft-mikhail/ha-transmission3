@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from collections.abc import Mapping
+import logging
 from typing import Any
 
 from transmission_rpc.error import (
@@ -54,6 +55,7 @@ DATA_SCHEMA = vol.Schema(
     }
 )
 
+_LOGGER = logging.getLogger(__name__)
 
 class TransmissionFlowHandler(ConfigFlow, domain=DOMAIN):
     """Handle Transmission config flow."""
@@ -87,6 +89,7 @@ class TransmissionFlowHandler(ConfigFlow, domain=DOMAIN):
                 errors[CONF_PASSWORD] = "invalid_auth"
             except TransmissionConnectError, TransmissionError:
                 errors["base"] = "cannot_connect"
+                _LOGGER.exception("Transmission error: cannot_connect")
 
             if not errors:
                 return self.async_create_entry(
