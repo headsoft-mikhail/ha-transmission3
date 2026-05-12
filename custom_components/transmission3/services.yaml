@@ -4,10 +4,10 @@ add_torrent:
       required: true
       selector:
         config_entry:
-          integration: transmission
+          integration: transmission3
     torrent:
       required: true
-      example: http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso.torrent
+      example: "http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso.torrent"
       selector:
         text:
     download_path:
@@ -27,20 +27,25 @@ get_torrents:
       required: true
       selector:
         config_entry:
-          integration: transmission
+          integration: transmission3
+
     torrent_filter:
       required: true
-      example: "all"
       default: "all"
+      example: "all"
       selector:
         select:
           options:
-            - "all"
-            - "active"
-            - "started"
-            - "paused"
-            - "completed"
-          translation_key: torrent_filter
+            - value: "all"
+              label: "All"
+            - value: "active"
+              label: "Active"
+            - value: "started"
+              label: "Started"
+            - value: "paused"
+              label: "Paused"
+            - value: "completed"
+              label: "Completed"
 
 remove_torrent:
   fields:
@@ -48,10 +53,10 @@ remove_torrent:
       required: true
       selector:
         config_entry:
-          integration: transmission
+          integration: transmission3
     id:
       required: true
-      example: 123
+      example: "123"
       selector:
         text:
     delete_data:
@@ -66,10 +71,10 @@ start_torrent:
       required: true
       selector:
         config_entry:
-          integration: transmission
+          integration: transmission3
     id:
       required: true
-      example: 123
+      example: "123"
       selector:
         text:
 
@@ -79,9 +84,9 @@ stop_torrent:
       required: true
       selector:
         config_entry:
-          integration: transmission
+          integration: transmission3
     id:
       required: true
-      example: 123
+      example: "123"
       selector:
         text:

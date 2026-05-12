@@ -1,14 +1,14 @@
 {
-  "domain": "transmission",
+  "domain": "transmission3",
   "name": "Transmission 3.x",
-  "codeowners": [],
-  "config_flow": true,
-  "documentation": "https://github.com/headsoft-mikhail/ha-transmission3/blob/main/README.md",
+  "version": "1.0.0",
+  "documentation": "https://github.com/headsoft-mikhail/ha-transmission3",
+  "issue_tracker": "https://github.com/headsoft-mikhail/ha-transmission3/issues",
   "integration_type": "service",
   "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/headsoft-mikhail/ha-transmission3/issues",
-  "loggers": ["transmissionrpc"],
+  "config_flow": true,
   "quality_scale": "bronze",
   "requirements": ["transmission-rpc==7.0.3"],
-  "version": "1.0.0"
+  "codeowners": ["@headsoft-mikhail"],
+  "loggers": ["transmission_rpc"]
 }
