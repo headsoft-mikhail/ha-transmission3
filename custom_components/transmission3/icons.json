@@ -30,6 +30,9 @@
       "started_torrents": {
         "default": "mdi:counter"
       },
+      "status": {
+        "default": "mdi:information-outline"
+      },
       "total_download": {
         "default": "mdi:download-multiple"
       },
@@ -41,9 +44,6 @@
       },
       "total_upload": {
         "default": "mdi:upload-multiple"
-      },
-      "transmission_status": {
-        "default": "mdi:information-outline"
       },
       "upload_speed": {
         "default": "mdi:cloud-upload"

@@ -78,7 +78,7 @@ SENSOR_TYPES: tuple[TransmissionSensorEntityDescription, ...] = (
     ),
     TransmissionSensorEntityDescription(
         key="status",
-        translation_key="transmission_status",
+        translation_key="status",
         device_class=SensorDeviceClass.ENUM,
         options=[STATE_IDLE, STATE_UP_DOWN, STATE_SEEDING, STATE_DOWNLOADING],
         val_func=lambda coordinator: get_state(

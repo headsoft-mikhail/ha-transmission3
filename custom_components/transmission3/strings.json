@@ -98,7 +98,7 @@
       "total_upload": {
         "name": "Total upload"
       },
-      "transmission_status": {
+      "status": {
         "name": "Status",
         "state": {
           "downloading": "Downloading",
