@@ -22,7 +22,7 @@ This integration supports Transmission 3.0.0 and later versions. For Transmissio
 
 1. Add this repository as a custom repository in HACS:
    - Type: Integration
-   - Repository: `headsoft-mikhail/transmission3`
+   - Repository: `headsoft-mikhail/ha-transmission3`
 
 2. Click "Download" to install
 
