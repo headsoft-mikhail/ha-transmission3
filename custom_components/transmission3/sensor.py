@@ -199,10 +199,6 @@ async def async_setup_entry(
 ) -> None:
     """Set up the Transmission sensors."""
     coordinator = config_entry.runtime_data
-
-    for description in SENSOR_TYPES:
-        _LOGGER.warning(f"{description.translation_key}: {coordinator.config_entry.entry_id}-{description.key}")
-
     async_add_entities(
         TransmissionSensor(coordinator, description) for description in SENSOR_TYPES
     )
